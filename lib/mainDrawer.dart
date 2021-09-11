@@ -23,11 +23,41 @@ class _MainDrawerState extends State<MainDrawer> {
                 Container(
                   width: 100,
                   height: 100,
-                  decoration: BoxDecoration(shape: BoxShape.circle),
-                )
+                  margin: EdgeInsets.only(top: 40,bottom: 10),
+                  decoration: BoxDecoration(shape: BoxShape.circle,
+                  image: DecorationImage(
+                    image: AssetImage('assets/mydp.png'),
+                    fit: BoxFit.fill,
+
+                  ),
+                  ),
+                ),
+                Text('Dhanushan',style: TextStyle(color: Colors.black87,fontSize: 20),),
+                Text('Danuthasan08@gmail.com',style: TextStyle(color:Colors.black87),)
               ],
             ),
-          )
+          ),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Home',style: TextStyle(fontSize: 18),),
+            onTap: (){},
+          ),
+          ListTile(
+            leading: Icon(Icons.settings),
+            title: Text('Settings',style: TextStyle(fontSize: 18),),
+            onTap: (){},
+          ),
+          ListTile(
+            leading: Icon(Icons.text_format),
+            title: Text('Leagal & Privicy',style: TextStyle(fontSize: 18),),
+            onTap: (){},
+          ),
+          ListTile(
+            leading: Icon(Icons.arrow_back),
+            title: Text('Logout',style: TextStyle(fontSize: 18),),
+            onTap: (){},
+
+          ),
         ],
       ),
     );
